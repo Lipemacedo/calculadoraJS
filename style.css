@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: crimson;
+    width: 500px;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
+#numeros{
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.2s;
+    font: normal 1.4rem sans-serif;
+}
+#numeros:focus{
+    border: 2px solid blue ;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px ;
+    margin: 20px;
+    
+}
+.botoes button{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.226);
+    color: white;
+}
+.escala{
+ 
+    animation: escala 0.4s ease-in;
+}
+@keyframes escala{
+    0%{
+       transform: scale(1.05);
+    }
+
+}
